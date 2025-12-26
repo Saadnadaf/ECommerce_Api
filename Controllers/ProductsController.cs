@@ -6,9 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EcommerceAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ProductsController(StoreContext context) : ControllerBase
+    
+    public class ProductsController(StoreContext context) : BaseApiController
     {
         [HttpGet]
 
